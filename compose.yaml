@@ -1,0 +1,88 @@
+name: zookeeper-failover
+
+x-zookeeper: &zookeeper
+  image: zookeeper:3.9.6
+  restart: "no"
+  environment: &zk-env
+    ZOO_SERVERS: server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181
+    ZOO_TICK_TIME: 2000
+    ZOO_INIT_LIMIT: 10
+    ZOO_SYNC_LIMIT: 5
+    ZOO_4LW_COMMANDS_WHITELIST: ruok,srvr,mntr,stat
+    ZOO_ADMINSERVER_ENABLED: "false"
+    JVMFLAGS: -Xms64m -Xmx128m
+  healthcheck:
+    test: ["CMD-SHELL", "zkServer.sh status >/dev/null 2>&1"]
+    interval: 3s
+    timeout: 5s
+    retries: 30
+
+x-app: &app
+  image: zookeeper-failover-app:local
+  build: .
+  environment: &app-env
+    ZK_HOSTS: zk1:2181,zk2:2181,zk3:2181
+    DATA_PATH: /app/data/java_vacancies.csv
+    RECEIVER_URL: http://receiver:8080
+    RUN_ID: ${RUN_ID:-manual}
+    FENCING: ${FENCING:-1}
+    BATCH_ROWS: "200"
+    BATCH_DELAY: "0.5"
+  volumes:
+    - ./data:/app/data:ro
+    - ./baseline:/app/baseline:ro
+    - ./logs:/app/logs
+    - ./results:/app/results
+    - ./.runtime:/app/.runtime
+  depends_on:
+    zk1: {condition: service_healthy}
+    zk2: {condition: service_healthy}
+    zk3: {condition: service_healthy}
+
+services:
+  zk1:
+    <<: *zookeeper
+    hostname: zk1
+    environment:
+      <<: *zk-env
+      ZOO_MY_ID: 1
+    ports: ["127.0.0.1:2181:2181"]
+    volumes: ["zk1-data:/data", "zk1-log:/datalog"]
+  zk2:
+    <<: *zookeeper
+    hostname: zk2
+    environment:
+      <<: *zk-env
+      ZOO_MY_ID: 2
+    ports: ["127.0.0.1:2182:2181"]
+    volumes: ["zk2-data:/data", "zk2-log:/datalog"]
+  zk3:
+    <<: *zookeeper
+    hostname: zk3
+    environment:
+      <<: *zk-env
+      ZOO_MY_ID: 3
+    ports: ["127.0.0.1:2183:2181"]
+    volumes: ["zk3-data:/data", "zk3-log:/datalog"]
+  receiver:
+    <<: *app
+    command: ["python", "src/receiver.py"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  coordinator-a:
+    <<: *app
+    command: ["python", "src/coordinator.py", "--id", "coordinator-a"]
+  coordinator-b:
+    <<: *app
+    command: ["python", "src/coordinator.py", "--id", "coordinator-b"]
+
+volumes:
+  zk1-data:
+  zk1-log:
+  zk2-data:
+  zk2-log:
+  zk3-data:
+  zk3-log:

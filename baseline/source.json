@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/tayamaken/java-vacancy-analysis",
+  "commit": "73986b73a290f707e620cc777d8cb127bb606c39",
+  "normalization_source": "src/mapreduce.py",
+  "baseline_source": "results/mapreduce/skill_pairs.csv",
+  "baseline_sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847",
+  "dataset_source": "data/java_vacancies.csv",
+  "dataset_sha256": "6e99490766a6adb54b6c5c88412f2f2cb96511a11ffe73b78fe42c6822193331",
+  "rows": 6907,
+  "unique_pairs": 20635
+}

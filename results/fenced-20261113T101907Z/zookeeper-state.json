@@ -1,0 +1,28 @@
+{
+  "checkpoint": {
+    "value": {
+      "epoch": 2,
+      "path": "/app/.runtime/fenced-20261113T101907Z/checkpoint-5628b45cf3744884bd212ff6ec040ab1.json",
+      "rows": 6907,
+      "source_sha256": "6e99490766a6adb54b6c5c88412f2f2cb96511a11ffe73b78fe42c6822193331"
+    },
+    "version": 35
+  },
+  "epoch": {
+    "value": 2,
+    "version": 2
+  },
+  "result": {
+    "value": {
+      "coordinator": "coordinator-a",
+      "epoch": 2,
+      "fencing": true,
+      "pair_occurrences": 124557,
+      "path": "results/fenced-20261113T101907Z/coordinator-a-epoch-2.csv",
+      "rows": 6907,
+      "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847",
+      "unique_pairs": 20635
+    },
+    "version": 1
+  }
+}

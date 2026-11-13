@@ -1,0 +1,12 @@
+{"actor": "coordinator-b", "event": "candidate", "session_id": 144120527748988930, "session_timeout": 10, "ts": 1794565209.2184644, "utc": "2026-11-13T10:20:09.218471+00:00"}
+{"actor": "coordinator-b", "epoch": 1, "epoch_version": 1, "event": "became_leader", "ts": 1794565209.2933323, "utc": "2026-11-13T10:20:09.293340+00:00"}
+{"actor": "coordinator-b", "event": "restored_checkpoint", "rows": 0, "ts": 1794565209.306024, "unique_pairs": 0, "utc": "2026-11-13T10:20:09.306029+00:00"}
+{"actor": "coordinator-b", "event": "checkpoint_saved", "rows": 200, "ts": 1794565210.0295951, "unique_pairs": 2371, "utc": "2026-11-13T10:20:10.029600+00:00"}
+{"actor": "coordinator-b", "event": "checkpoint_saved", "rows": 400, "ts": 1794565210.682084, "unique_pairs": 3654, "utc": "2026-11-13T10:20:10.682089+00:00"}
+{"actor": "coordinator-b", "event": "checkpoint_saved", "rows": 600, "ts": 1794565211.3196301, "unique_pairs": 4390, "utc": "2026-11-13T10:20:11.319639+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "SUSPENDED", "ts": 1794565252.238883, "utc": "2026-11-13T10:20:52.238887+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "LOST", "ts": 1794565252.2666163, "utc": "2026-11-13T10:20:52.266621+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "CONNECTED", "ts": 1794565252.2875812, "utc": "2026-11-13T10:20:52.287585+00:00"}
+{"actor": "coordinator-b", "error": "BadVersionError", "event": "stale_checkpoint_rejected", "rows": 800, "ts": 1794565252.3174312, "utc": "2026-11-13T10:20:52.317435+00:00"}
+{"actor": "coordinator-b", "coordinator": "coordinator-b", "epoch": 1, "event": "publication_accepted", "fencing": false, "pair_occurrences": 124557, "path": "results/unfenced-20261113T101907Z/coordinator-b-epoch-1.csv", "pointer_version": 2, "rows": 6907, "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847", "ts": 1794565271.2307172, "unique_pairs": 20635, "utc": "2026-11-13T10:21:11.230721+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "LOST", "ts": 1794565271.2495189, "utc": "2026-11-13T10:21:11.249524+00:00"}

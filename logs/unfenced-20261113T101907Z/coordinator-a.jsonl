@@ -1,0 +1,37 @@
+{"actor": "coordinator-a", "event": "candidate", "session_id": 72062933738520578, "session_timeout": 10, "ts": 1794565209.5946193, "utc": "2026-11-13T10:20:09.594627+00:00"}
+{"actor": "coordinator-a", "epoch": 2, "epoch_version": 2, "event": "became_leader", "ts": 1794565220.3472347, "utc": "2026-11-13T10:20:20.347241+00:00"}
+{"actor": "coordinator-a", "event": "restored_checkpoint", "rows": 600, "ts": 1794565220.370795, "unique_pairs": 4390, "utc": "2026-11-13T10:20:20.370802+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 800, "ts": 1794565221.1990173, "unique_pairs": 5144, "utc": "2026-11-13T10:20:21.199021+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 1000, "ts": 1794565221.8406718, "unique_pairs": 5663, "utc": "2026-11-13T10:20:21.840685+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 1200, "ts": 1794565222.4882169, "unique_pairs": 6748, "utc": "2026-11-13T10:20:22.488222+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 1400, "ts": 1794565223.199583, "unique_pairs": 7883, "utc": "2026-11-13T10:20:23.199587+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 1600, "ts": 1794565223.8387203, "unique_pairs": 8513, "utc": "2026-11-13T10:20:23.838724+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 1800, "ts": 1794565224.4713829, "unique_pairs": 9014, "utc": "2026-11-13T10:20:24.471387+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 2000, "ts": 1794565225.1723392, "unique_pairs": 9527, "utc": "2026-11-13T10:20:25.172344+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 2200, "ts": 1794565225.9695094, "unique_pairs": 9729, "utc": "2026-11-13T10:20:25.969513+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 2400, "ts": 1794565226.6183562, "unique_pairs": 9955, "utc": "2026-11-13T10:20:26.618360+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 2600, "ts": 1794565227.2886972, "unique_pairs": 10474, "utc": "2026-11-13T10:20:27.288703+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 2800, "ts": 1794565228.021001, "unique_pairs": 11369, "utc": "2026-11-13T10:20:28.021007+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 3000, "ts": 1794565228.7468727, "unique_pairs": 11881, "utc": "2026-11-13T10:20:28.746876+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 3200, "ts": 1794565229.3894758, "unique_pairs": 12382, "utc": "2026-11-13T10:20:29.389480+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 3400, "ts": 1794565230.0564613, "unique_pairs": 12994, "utc": "2026-11-13T10:20:30.056467+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 3600, "ts": 1794565230.7510862, "unique_pairs": 13406, "utc": "2026-11-13T10:20:30.751090+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 3800, "ts": 1794565231.40585, "unique_pairs": 13679, "utc": "2026-11-13T10:20:31.405855+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 4000, "ts": 1794565232.0827658, "unique_pairs": 14115, "utc": "2026-11-13T10:20:32.082769+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 4200, "ts": 1794565232.752098, "unique_pairs": 14466, "utc": "2026-11-13T10:20:32.752102+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 4400, "ts": 1794565233.4305468, "unique_pairs": 14818, "utc": "2026-11-13T10:20:33.430550+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 4600, "ts": 1794565234.1439285, "unique_pairs": 15047, "utc": "2026-11-13T10:20:34.143932+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 4800, "ts": 1794565234.8082938, "unique_pairs": 15595, "utc": "2026-11-13T10:20:34.808298+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 5000, "ts": 1794565235.5008054, "unique_pairs": 16851, "utc": "2026-11-13T10:20:35.500808+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 5200, "ts": 1794565236.198991, "unique_pairs": 17236, "utc": "2026-11-13T10:20:36.198995+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 5400, "ts": 1794565236.8830154, "unique_pairs": 17668, "utc": "2026-11-13T10:20:36.883019+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 5600, "ts": 1794565237.5630808, "unique_pairs": 18270, "utc": "2026-11-13T10:20:37.563085+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 5800, "ts": 1794565238.2945948, "unique_pairs": 18400, "utc": "2026-11-13T10:20:38.294599+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 6000, "ts": 1794565238.9668026, "unique_pairs": 18738, "utc": "2026-11-13T10:20:38.966805+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 6200, "ts": 1794565239.6631167, "unique_pairs": 19313, "utc": "2026-11-13T10:20:39.663121+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 6400, "ts": 1794565240.3605583, "unique_pairs": 19668, "utc": "2026-11-13T10:20:40.360563+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 6600, "ts": 1794565241.0396664, "unique_pairs": 19919, "utc": "2026-11-13T10:20:41.039672+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 6800, "ts": 1794565241.7279348, "unique_pairs": 20508, "utc": "2026-11-13T10:20:41.727938+00:00"}
+{"actor": "coordinator-a", "event": "checkpoint_saved", "rows": 6907, "ts": 1794565242.4498155, "unique_pairs": 20635, "utc": "2026-11-13T10:20:42.449819+00:00"}
+{"actor": "coordinator-a", "coordinator": "coordinator-a", "epoch": 2, "event": "publication_accepted", "fencing": false, "pair_occurrences": 124557, "path": "results/unfenced-20261113T101907Z/coordinator-a-epoch-2.csv", "pointer_version": 1, "rows": 6907, "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847", "ts": 1794565242.611779, "unique_pairs": 20635, "utc": "2026-11-13T10:20:42.611784+00:00"}
+{"actor": "coordinator-a", "event": "session_state", "state": "LOST", "ts": 1794565242.63402, "utc": "2026-11-13T10:20:42.634024+00:00"}

@@ -1,0 +1,12 @@
+{"actor": "coordinator-b", "event": "candidate", "session_id": 144120527748988932, "session_timeout": 10, "ts": 1794565275.319634, "utc": "2026-11-13T10:21:15.319642+00:00"}
+{"actor": "coordinator-b", "epoch": 1, "epoch_version": 1, "event": "became_leader", "ts": 1794565275.4640791, "utc": "2026-11-13T10:21:15.464086+00:00"}
+{"actor": "coordinator-b", "event": "restored_checkpoint", "rows": 0, "ts": 1794565275.4805033, "unique_pairs": 0, "utc": "2026-11-13T10:21:15.480509+00:00"}
+{"actor": "coordinator-b", "event": "checkpoint_saved", "rows": 200, "ts": 1794565276.304067, "unique_pairs": 2371, "utc": "2026-11-13T10:21:16.304072+00:00"}
+{"actor": "coordinator-b", "event": "checkpoint_saved", "rows": 400, "ts": 1794565276.917067, "unique_pairs": 3654, "utc": "2026-11-13T10:21:16.917075+00:00"}
+{"actor": "coordinator-b", "event": "checkpoint_saved", "rows": 600, "ts": 1794565277.6431599, "unique_pairs": 4390, "utc": "2026-11-13T10:21:17.643164+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "SUSPENDED", "ts": 1794565318.5278, "utc": "2026-11-13T10:21:58.527804+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "LOST", "ts": 1794565318.536119, "utc": "2026-11-13T10:21:58.536122+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "CONNECTED", "ts": 1794565318.569173, "utc": "2026-11-13T10:21:58.569179+00:00"}
+{"actor": "coordinator-b", "error": "BadVersionError", "event": "stale_checkpoint_rejected", "rows": 800, "ts": 1794565318.59328, "utc": "2026-11-13T10:21:58.593283+00:00"}
+{"actor": "coordinator-b", "epoch": 1, "error": "BadVersionError", "event": "publication_rejected", "ts": 1794565340.849414, "utc": "2026-11-13T10:22:20.849419+00:00"}
+{"actor": "coordinator-b", "event": "session_state", "state": "LOST", "ts": 1794565340.8759747, "utc": "2026-11-13T10:22:20.875980+00:00"}

@@ -1,0 +1,43 @@
+{
+  "run": "unfenced-20261113T101907Z",
+  "fencing": false,
+  "leader": "coordinator-b",
+  "standby": "coordinator-a",
+  "pause_command_started_ts": 1794565211.4058924,
+  "pause_confirmed_ts": 1794565211.7765794,
+  "standby_became_leader_ts": 1794565220.3472347,
+  "failover_seconds": 8.570655,
+  "pause_seconds": 40.501706,
+  "restored_rows": 600,
+  "accepted_publications": 2,
+  "final_pointer": {
+    "value": {
+      "coordinator": "coordinator-b",
+      "epoch": 1,
+      "fencing": false,
+      "pair_occurrences": 124557,
+      "path": "results/unfenced-20261113T101907Z/coordinator-b-epoch-1.csv",
+      "rows": 6907,
+      "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847",
+      "unique_pairs": 20635
+    },
+    "version": 2
+  },
+  "baseline_comparisons": [
+    {
+      "path": "results/unfenced-20261113T101907Z/coordinator-a-epoch-2.csv",
+      "all_pairs_equal_hw3": true,
+      "unique_pairs": 20635,
+      "pair_occurrences": 124557,
+      "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847"
+    },
+    {
+      "path": "results/unfenced-20261113T101907Z/coordinator-b-epoch-1.csv",
+      "all_pairs_equal_hw3": true,
+      "unique_pairs": 20635,
+      "pair_occurrences": 124557,
+      "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847"
+    }
+  ],
+  "resumed_publication_event": "publication_accepted"
+}

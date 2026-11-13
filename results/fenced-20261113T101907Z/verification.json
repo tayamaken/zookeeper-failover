@@ -1,0 +1,43 @@
+{
+  "run": "fenced-20261113T101907Z",
+  "fencing": true,
+  "leader": "coordinator-b",
+  "standby": "coordinator-a",
+  "pause_command_started_ts": 1794565277.7464464,
+  "pause_confirmed_ts": 1794565278.1537166,
+  "standby_became_leader_ts": 1794565288.3696914,
+  "failover_seconds": 10.215975,
+  "pause_seconds": 40.431458,
+  "restored_rows": 600,
+  "accepted_publications": 1,
+  "final_pointer": {
+    "value": {
+      "coordinator": "coordinator-a",
+      "epoch": 2,
+      "fencing": true,
+      "pair_occurrences": 124557,
+      "path": "results/fenced-20261113T101907Z/coordinator-a-epoch-2.csv",
+      "rows": 6907,
+      "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847",
+      "unique_pairs": 20635
+    },
+    "version": 1
+  },
+  "baseline_comparisons": [
+    {
+      "path": "results/fenced-20261113T101907Z/coordinator-a-epoch-2.csv",
+      "all_pairs_equal_hw3": true,
+      "unique_pairs": 20635,
+      "pair_occurrences": 124557,
+      "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847"
+    },
+    {
+      "path": "results/fenced-20261113T101907Z/coordinator-b-epoch-1.csv",
+      "all_pairs_equal_hw3": true,
+      "unique_pairs": 20635,
+      "pair_occurrences": 124557,
+      "sha256": "939774ba3609a093ee33edb348e2528414206c801f38dcb46d2d561e7e1b7847"
+    }
+  ],
+  "resumed_publication_event": "publication_rejected"
+}
